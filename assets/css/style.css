@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%)
+    --Very light grayish blue: hsl(210, 60%, 98%);
+    --Lightgrayish-blue-1: hsl(211, 68%, 94%);
+    --Lightgrayish-blue-2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayish-blue: hsl(219, 12%, 42%);
+    --Verydark-blue: hsl(224, 21%, 14%);
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+    width: 375px;
+    padding: 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    font-style: normal;
+    color: black;
+}
+ul{
+    padding: 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+.notification-menu{
+    justify-content: space-between;
+}
+
+.notification-menu h1,
+.notification-menu span{
+    font-size: 20px;
+}
+li{
+    margin-bottom: 35px;
+}
+li:last-of-type{
+    margin-bottom: 0;
+}
+img{
+    width: 35px;
+    align-self: self-start;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+.grd1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: self-start;
+}
+.grd2{
+    grid-row: 1 / 1;
+    grid-column: 2/4;
+    align-self: self-start;
+}
+.grid3{
+    grid-column: 2/4;
+    padding: 15px;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.coment{
+    border: 1px solid var(--Lightgrayish-blue-2);;
+}
+
+.block{
+    display: block;
+    color: var(--Grayishblue);
+}
+/* .names{
+    font-weight: 800;
+} */
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    font-size: inherit;
+    color: hsl(228, 45%, 44%);
+}
