@@ -8,48 +8,78 @@
   <title>Frontend Mentor | Notifications page</title>
 </head>
 <body>
-  <main class="container">
-    <div class="notification-menu flex">
-      <h1>Notifications <span>3</span></h1>
-      <h2>Mark all as read</h2>
+  <div class="container">
+    <div class="wrapper">
+      <header class="notification-menu flex">
+        <h1 class="title">Notifications <span class="number">3</sp></h1>
+        <a href="#" class="read">Mark all as read</a>
+      </header>
+      <ul class="notifications__center">
+        <li class="flex unseen">
+          <img class="avatar" src="./assets/images/avatar-mark-webber.webp" alt="user-avatar">
+          <div class="f-c">
+            <p><a class="names" href="#">Mark Webber </a>reacted to your recent post <span class="post">My first tournament today!</span><span class="dot"></span></p>
+            <p class="time">1m ago</p>
+          </div>
+        </li>
+        <li class="flex unseen">
+          <img class="avatar" src="./assets/images/avatar-angela-gray.webp" alt="user-avatar">
+          <div class="f-c">
+            <p><a class="names" href="#">Angela Gray</a>followed you<span class="dot"></span></p>
+            <p class="time">5 min ago</p>
+            
+          </div>
+        </li>
+        <li class="flex unseen">
+          <img class="avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="user-avatar">
+          <div class="f-c">
+            <p><a class="names" href="#">Jacob Thompson </a>has joined your group <a class="group" href="#">Chess Club</a><span class="dot"></span></p>
+            <p class="time">1 day ago</p>
+            
+          </div>
+        </li>
+        <li class=" with-message flex">
+          <img class="avatar" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="user-avatar">
+          <div class="f-c">
+            <p class="grd2"><a class="names" href="#">Rizky Hasanuddin</a> sent you a private message</p>
+            <p class="time">5 days ago</p>
+            <p class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+          </div>
+        </li>
+        <li class="flex with-comment">
+          <div class="flex">
+            <img class="avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="user-avatar">
+            <div class="f-c">
+              <p><a class="names" href="#">Kimberly Smith </a>commented on your picture</p>
+              <p class="time">1 week ago</p>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./assets/images/image-chess.webp" alt="chess-image">
+          </div>
+          
+        </li>
+        <li class="flex">
+          <img class="avatar" src="./assets/images/avatar-nathan-peterson.webp" alt="user-avatar">
+          <div class="f-c">
+            <p><a class="names" href="#">Nathan Peterson </a>reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </li>
+        <li class="flex">
+          <img class="avatar" src="./assets/images/avatar-anna-kim.webp" alt="user-avatar">
+          <div class="f-c">
+            <p><a class="names" href="#">Anna Kim </a>left the group <a href="#" class="group">Chess Club</a></p>
+              <p class="time">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <ul class="notifications__center">
-      <li class="flex">
-        <img src="./assets/images/avatar-mark-webber.webp" alt="user-avatar">
-        <p><strong class="names"><a href="#"> Mark Webber</a> </strong>reacted to your recent post <span class="post">My first tournament today!</span>
-          <span class="block">1m ago</span></p>
-      </li>
-      <li class="flex">
-        <img src="./assets/images/avatar-angela-gray.webp" alt="user-avatar">
-        <p><strong class="names"><a href="#">Angela Gray</a> </strong>followed you<span class="block">5m ago</span></p>
-      </li>
-      <li class="flex">
-        <img src="./assets/images/avatar-jacob-thompson.webp" alt="user-avatar">
-        <p><strong><a href="#">Jacob Thompson </a></strong>has joined your group <a href="#" class="page">Chess Club</a><span class="block">1 day ago</span></p>
-      </li>
-      <li class="grid">
-        <img class="grd1" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="user-avatar">
-        <p class="grd2"><strong class="names"><a href="#">Rizky Hasanuddin</a> </strong>sent you a private message<span class="block">5 days ago</span></p>
-        <p class=" grid3 coment">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
-      </li>
-      <li class="flex">
-        <img src="./assets/images/avatar-kimberly-smith.webp" alt="user-avatar">
-        <p><strong class="names"><a href="#">Kimberly Smith </a></strong>commented on your picture<span class="block">1 week ago</span></p>
-        <img src="./assets/images/image-chess.webp" alt="chess-image">
-      </li>
-      <li class="flex">
-        <img src="./assets/images/avatar-nathan-peterson.webp" alt="user-avatar">
-        <p><strong class="names"><a href="#">Nathan Peterson </a></strong> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span><span class="block">2 weeks ago</span></p>
-      </li>
-      <li class="flex">
-        <img src="./assets/images/avatar-anna-kim.webp" alt="user-avatar">
-        <p><strong class="names"><a href="#">Anna Kim </a></strong>left the group <a href="#" class="page">Chess Club</a><span class="block">2 weeks ago</span></p>
-      </li>
-    </ul>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </main>
+  </div>
+  <footer class="attribution">
+    Challenge by <a class="references" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="references" href="#">Agustín R. Firpo</a>.
+  </footer>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
